@@ -84,6 +84,8 @@ func ListenAndServe(listener net.Listener, handler tcp.Handler, closeChan <-chan
 		}
 		// handle
 		logger.Info("accept link")
+		// ClientCounter is only used to test if handler.Close() works normally,
+		// in case waitDone.Wait() never returns.
 		ClientCounter++
 		waitDone.Add(1)
 		go func() {

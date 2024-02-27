@@ -33,7 +33,7 @@ type Handler struct {
 	closing    atomic.Boolean // refusing new client and new request
 }
 
-// MakeHandler creates a Handler instance
+// MakeHandler creates a Handler instance, and also creates all db's for redis
 func MakeHandler() *Handler {
 	var db database.DB
 	if config.Properties.Self != "" &&

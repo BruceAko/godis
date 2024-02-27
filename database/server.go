@@ -41,7 +41,7 @@ func fileExists(filename string) bool {
 	return err == nil && !info.IsDir()
 }
 
-// NewStandaloneServer creates a standalone redis server, with multi database and all other funtions
+// NewStandaloneServer creates a standalone redis server, with multi database and all other functions
 func NewStandaloneServer() *Server {
 	server := &Server{}
 	if config.Properties.Databases == 0 {
