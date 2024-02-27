@@ -112,7 +112,7 @@ func (c *Connection) Subscribe(channel string) {
 	c.subs[channel] = true
 }
 
-// UnSubscribe removes current connection into subscribers of the given channel
+// UnSubscribe removes current connection from subscribers of the given channel
 func (c *Connection) UnSubscribe(channel string) {
 	c.mu.Lock()
 	defer c.mu.Unlock()
@@ -152,7 +152,7 @@ func (c *Connection) GetPassword() string {
 	return c.password
 }
 
-// InMultiState tells is connection in an uncommitted transaction
+// InMultiState tells if connection is in an uncommitted transaction
 func (c *Connection) InMultiState() bool {
 	return c.flags&flagMulti > 0
 }
@@ -173,7 +173,7 @@ func (c *Connection) GetQueuedCmdLine() [][][]byte {
 	return c.queue
 }
 
-// EnqueueCmd  enqueues command of current transaction
+// EnqueueCmd enqueues command of current transaction
 func (c *Connection) EnqueueCmd(cmdLine [][]byte) {
 	c.queue = append(c.queue, cmdLine)
 }

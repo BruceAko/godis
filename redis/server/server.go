@@ -64,7 +64,10 @@ func (h *Handler) Handle(ctx context.Context, conn net.Conn) {
 	client := connection.NewConn(conn)
 	h.activeConn.Store(client, struct{}{})
 
+	// rg: goroutine responsible for reading from the socket
 	ch := parser.ParseStream(conn)
+
+	// wg: goroutine responsible for writing to the socket
 	for payload := range ch {
 		if payload.Err != nil {
 			if payload.Err == io.EOF ||
