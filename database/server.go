@@ -23,7 +23,7 @@ var godisVersion = "1.2.8" // do not modify
 
 // Server is a redis-server with full capabilities including multiple database, rdb loader, replication
 type Server struct {
-	dbSet []*atomic.Value // *DB
+	dbSet []*atomic.Value // *DB, dbList indeed
 
 	// handle publish/subscribe
 	hub *pubsub.Hub
