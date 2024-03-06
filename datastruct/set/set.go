@@ -1,7 +1,7 @@
 package set
 
 import (
-	"github.com/hdt3213/godis/datastruct/dict"
+	"github.com/BruceAko/godis/datastruct/dict"
 )
 
 // Set is a set of elements based on hash table

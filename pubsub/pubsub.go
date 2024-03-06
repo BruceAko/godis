@@ -1,10 +1,10 @@
 package pubsub
 
 import (
-	"github.com/hdt3213/godis/datastruct/list"
-	"github.com/hdt3213/godis/interface/redis"
-	"github.com/hdt3213/godis/lib/utils"
-	"github.com/hdt3213/godis/redis/protocol"
+	"github.com/BruceAko/godis/datastruct/list"
+	"github.com/BruceAko/godis/interface/redis"
+	"github.com/BruceAko/godis/lib/utils"
+	"github.com/BruceAko/godis/redis/protocol"
 	"strconv"
 )
 

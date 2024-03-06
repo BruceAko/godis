@@ -1,7 +1,7 @@
 package dict
 
 import (
-	"github.com/hdt3213/godis/lib/utils"
+	"github.com/BruceAko/godis/lib/utils"
 	"strconv"
 	"sync"
 	"testing"
@@ -465,7 +465,7 @@ func TestConcurrentRemoveWithLock(t *testing.T) {
 	}
 }
 
-//change t.Error remove->forEach
+// change t.Error remove->forEach
 func TestConcurrentForEach(t *testing.T) {
 	d := MakeConcurrent(0)
 	size := 100

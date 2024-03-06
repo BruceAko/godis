@@ -5,11 +5,11 @@ import (
 	"strconv"
 	"strings"
 
-	SortedSet "github.com/hdt3213/godis/datastruct/sortedset"
-	"github.com/hdt3213/godis/interface/database"
-	"github.com/hdt3213/godis/interface/redis"
-	"github.com/hdt3213/godis/lib/utils"
-	"github.com/hdt3213/godis/redis/protocol"
+	SortedSet "github.com/BruceAko/godis/datastruct/sortedset"
+	"github.com/BruceAko/godis/interface/database"
+	"github.com/BruceAko/godis/interface/redis"
+	"github.com/BruceAko/godis/lib/utils"
+	"github.com/BruceAko/godis/redis/protocol"
 )
 
 func (db *DB) getAsSortedSet(key string) (*SortedSet.SortedSet, protocol.ErrorReply) {

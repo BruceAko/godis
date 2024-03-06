@@ -1,11 +1,11 @@
 package database
 
 import (
-	Dict "github.com/hdt3213/godis/datastruct/dict"
-	"github.com/hdt3213/godis/interface/database"
-	"github.com/hdt3213/godis/interface/redis"
-	"github.com/hdt3213/godis/lib/utils"
-	"github.com/hdt3213/godis/redis/protocol"
+	Dict "github.com/BruceAko/godis/datastruct/dict"
+	"github.com/BruceAko/godis/interface/database"
+	"github.com/BruceAko/godis/interface/redis"
+	"github.com/BruceAko/godis/lib/utils"
+	"github.com/BruceAko/godis/redis/protocol"
 	"strconv"
 	"strings"
 )

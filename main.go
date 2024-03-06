@@ -4,11 +4,11 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/hdt3213/godis/config"
-	"github.com/hdt3213/godis/lib/logger"
-	"github.com/hdt3213/godis/lib/utils"
-	RedisServer "github.com/hdt3213/godis/redis/server"
-	"github.com/hdt3213/godis/tcp"
+	"github.com/BruceAko/godis/config"
+	"github.com/BruceAko/godis/lib/logger"
+	"github.com/BruceAko/godis/lib/utils"
+	RedisServer "github.com/BruceAko/godis/redis/server"
+	"github.com/BruceAko/godis/tcp"
 )
 
 var banner = `

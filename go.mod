@@ -1,7 +1,5 @@
-module github.com/hdt3213/godis
+module github.com/BruceAko/godis
 
-go 1.17
+go 1.19
 
-require (
-	github.com/hdt3213/rdb v1.0.10
-)
+require github.com/hdt3213/rdb v1.0.16

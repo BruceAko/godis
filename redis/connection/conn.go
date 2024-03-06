@@ -1,8 +1,8 @@
 package connection
 
 import (
-	"github.com/hdt3213/godis/lib/logger"
-	"github.com/hdt3213/godis/lib/sync/wait"
+	"github.com/BruceAko/godis/lib/logger"
+	"github.com/BruceAko/godis/lib/sync/wait"
 	"net"
 	"sync"
 	"time"

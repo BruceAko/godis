@@ -1,8 +1,8 @@
 package cluster
 
 import (
-	"github.com/hdt3213/godis/redis/connection"
-	"github.com/hdt3213/godis/redis/protocol/asserts"
+	"github.com/BruceAko/godis/redis/connection"
+	"github.com/BruceAko/godis/redis/protocol/asserts"
 	"testing"
 )
 
